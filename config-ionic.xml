@@ -69,7 +69,6 @@
 	<!-- ./default -->
 	<plugin name="cordova-plugin-dialogs" />
 	<plugin name="cordova-plugin-inappbrowser" />
-	<plugin name="cordova-plugin-network-information" />
 	<platform name="android">
 		<!-- splash and icon for build using ionic/cordova -->
 		<icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
