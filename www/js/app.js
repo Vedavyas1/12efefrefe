@@ -1,7 +1,7 @@
 angular.module("gst", ["ngCordova","ionic","ionMdInput","ionic-material","ion-datetime-picker","ionic.rating","utf8-base64","angular-md5","gst.controllers", "gst.services"])
 	.run(function($ionicPlatform,$window,$interval,$timeout,$ionicHistory,$ionicPopup,$state,$rootScope){
 
-		$rootScope.appName = "" ;
+		$rootScope.appName = "GST" ;
 		$rootScope.appLogo = "data/images/header/logo.png" ;
 		$rootScope.appVersion = "1.0" ;
 
@@ -25,15 +25,6 @@ angular.module("gst", ["ngCordova","ionic","ionMdInput","ionic-material","ion-da
 			});
 
 
-			//required: cordova plugin add cordova-plugin-network-information --save
-			$interval(function(){
-				if ( typeof navigator == "object" && typeof navigator.connection != "undefined"){
-					var networkState = navigator.connection.type;
-					if (networkState == "none") {
-						$window.location = "retry.html";
-					}
-				}
-			}, 5000);
 
 		});
 		$ionicPlatform.registerBackButtonAction(function (e){

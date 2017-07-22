@@ -18,7 +18,7 @@ angular.module("gst.controllers", [])
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: indexCtrl --|-- $scope.openURL
 	// open external browser 
@@ -105,7 +105,7 @@ angular.module("gst.controllers", [])
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: side_menusCtrl --|-- $scope.openURL
 	// open external browser 
@@ -216,7 +216,7 @@ angular.module("gst.controllers", [])
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: about_usCtrl --|-- $scope.openURL
 	// open external browser 
@@ -303,7 +303,7 @@ angular.module("gst.controllers", [])
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: bookmarkCtrl --|-- $scope.openURL
 	// open external browser 
@@ -390,7 +390,7 @@ angular.module("gst.controllers", [])
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: chapterCtrl --|-- $scope.openURL
 	// open external browser 
@@ -480,7 +480,7 @@ $ionicConfig.backButton.text("");
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: dashboardCtrl --|-- $scope.openURL
 	// open external browser 
@@ -567,7 +567,7 @@ $ionicConfig.backButton.text("");
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: faqsCtrl --|-- $scope.openURL
 	// open external browser 
@@ -654,7 +654,7 @@ $ionicConfig.backButton.text("");
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: gst_rulesCtrl --|-- $scope.openURL
 	// open external browser 
@@ -741,7 +741,7 @@ $ionicConfig.backButton.text("");
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: hsn_codeCtrl --|-- $scope.openURL
 	// open external browser 
@@ -828,7 +828,7 @@ $ionicConfig.backButton.text("");
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: sac_codeCtrl --|-- $scope.openURL
 	// open external browser 
@@ -915,7 +915,7 @@ $ionicConfig.backButton.text("");
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: section_bookmarkCtrl --|-- $scope.openURL
 	// open external browser 
@@ -1055,7 +1055,7 @@ $ionicConfig.backButton.text("");
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: section_singlesCtrl --|-- $scope.openURL
 	// open external browser 
@@ -1202,7 +1202,7 @@ $ionicConfig.backButton.text("");
 				$ionicLoading.hide();
 				$scope.section = current_item ;
 				controller_by_user();
-			}, 100);
+			}, 200);
 		};
 	}).then(function(value){
 	}).catch(function (err){
@@ -1347,7 +1347,7 @@ $ionicConfig.backButton.text("");
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: sectionsCtrl --|-- $scope.openURL
 	// open external browser 
@@ -1541,7 +1541,7 @@ $ionicConfig.backButton.text("");
 				// TODO: sectionsCtrl --|---------- set:localforage
 				localforage.setItem("data_sections_" + $scope.hashURL, JSON.stringify(data_sections));
 				$scope.sections = [];
-				for(lastPush = 0; lastPush < 100; lastPush++) {
+				for(lastPush = 0; lastPush < 200; lastPush++) {
 					if (angular.isObject(data_sections[lastPush])){
 						$scope.sections.push(data_sections[lastPush]);
 					};
@@ -1566,7 +1566,7 @@ $ionicConfig.backButton.text("");
 						localforage.setItem("data_sections_" + $scope.hashURL,JSON.stringify(data_sections));
 						controller_by_user();
 						$scope.sections = [];
-						for(lastPush = 0; lastPush < 100; lastPush++) {
+						for(lastPush = 0; lastPush < 200; lastPush++) {
 							if (angular.isObject(data_sections[lastPush])){
 								$scope.sections.push(data_sections[lastPush]);
 							};
@@ -1618,7 +1618,7 @@ $ionicConfig.backButton.text("");
 			// TODO: sectionsCtrl --|---------- set:localforage
 			localforage.setItem("data_sections_" + $scope.hashURL,JSON.stringify(data_sections));
 			$scope.sections = [];
-			for(lastPush = 0; lastPush < 100; lastPush++) {
+			for(lastPush = 0; lastPush < 200; lastPush++) {
 				if (angular.isObject(data_sections[lastPush])){
 					$scope.sections.push(data_sections[lastPush]);
 				};
@@ -1643,7 +1643,7 @@ $ionicConfig.backButton.text("");
 					// TODO: sectionsCtrl --|---------- set:localforage
 					localforage.setItem("data_sections_"+ $scope.hashURL,JSON.stringify(data_sections));
 					$scope.sections = [];
-					for(lastPush = 0; lastPush < 100; lastPush++) {
+					for(lastPush = 0; lastPush < 200; lastPush++) {
 						if (angular.isObject(data_sections[lastPush])){
 							$scope.sections.push(data_sections[lastPush]);
 						};
@@ -1742,7 +1742,7 @@ $ionicConfig.backButton.text("");
 	$rootScope.scrollTop = function(){
 		$timeout(function(){
 			$ionicScrollDelegate.$getByHandle("top").scrollTop();
-		},100);
+		},200);
 	};
 	// TODO: slide_tab_menuCtrl --|-- $scope.openURL
 	// open external browser 
