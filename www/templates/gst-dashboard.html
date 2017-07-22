@@ -1,0 +1,43 @@
+	<ion-view view-title="Dashboard" hide-nav-bar="true" >
+		<!-- content -->
+		<ion-content delegate-handle="top"   id="page-dashboard" class=" page-dashboard">
+		
+	<div style="width: 100%;height:100%;">
+		<ion-slide-box class="ion-slide-tabs" slide-tabs-scrollable="false" show-pager="false" ion-slide-tabs>
+			<ion-slide ion-slide-tab-label="GST ACT" >
+					<ion-content scroll="false" class="slidingTabContent">
+						<div class="list">
+							<a class="item item-icon-left" ng-href="#/gst/sections" >
+								<i class="icon ion-ios-book-outline" ></i>
+								<h2>Sections</h2>
+								<span class="item-note pull-left"></span>
+							</a>
+							<a class="item item-icon-left" ng-href="#/gst/gst_rules" >
+								<i class="icon ion-ios-checkmark" ></i>
+								<h2>GST Rules</h2>
+								<span class="item-note pull-left"></span>
+							</a>
+							<a class="item item-icon-left" ng-href="#/gst/hsn_code" >
+								<i class="icon ion-android-search" ></i>
+								<h2>HSN Code</h2>
+								<span class="item-note pull-left"></span>
+							</a>
+							<a class="item item-icon-left" ng-href="#/gst/sac_code" >
+								<i class="icon ion-android-search" ></i>
+								<h2>SAC Code</h2>
+								<span class="item-note pull-left"></span>
+							</a>
+							<a class="item item-icon-left" ng-href="#/gst/section_bookmark" >
+								<i class="icon ion-star" ></i>
+								<h2>Bookmark</h2>
+								<span class="item-note pull-left"></span>
+							</a>
+						</div>
+					</ion-content>
+			</ion-slide>
+		</ion-slide-box>
+	</div>
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

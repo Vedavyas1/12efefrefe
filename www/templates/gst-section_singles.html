@@ -1,0 +1,33 @@
+	<ion-view view-title="Section Detail" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top"   id="page-section_singles" class="page-section_singles">
+		
+			<ion-refresher pulling-text="Pull to refresh..."  on-refresh="doRefresh()"></ion-refresher>
+			<div class="list ">
+					<div class="item item-text-wrap noborder to_trusted" ng-bind-html="section.content | strHTML"></div>
+					<!--
+					<div class="item">
+					<p>Share App</p>
+					<div class="button-bar">
+						<button class="button button-small button-assertive icon ion-social-googleplus" ng-click="openURL('https://plus.google.com/share?url=' + section.shareapp)"></button>
+						<button class="button button-small button-positive icon ion-social-facebook" ng-click="openURL('https://facebook.com/sharer/sharer.php?u=' + section.shareapp)"></button>
+						<button class="button button-small button-calm icon ion-social-twitter" ng-click="openURL('https://twitter.com/share?url=' + section.shareapp)"></button>
+						<button class="button button-small button-assertive-900 icon ion-social-pinterest" ng-click="openURL('https://pinterest.com/pin/create/bookmarklet/?&url=' + section.shareapp)"></button>
+						<button class="button button-small button-positive-900 icon ion-social-linkedin" ng-click="openURL('https://www.linkedin.com/shareArticle?url=' + section.shareapp)"></button>
+					</div>
+					</div>
+					-->
+					<div class="item">
+						<button run-social-sharing message="{{ section.shareapp }}" class="button button-small ion-android-share-alt button-outline button-positive icon-left">Share App</button>
+					</div>
+			</div>
+			<div class="list">
+				<div class="item tabs tabs-secondary tabs-icon-left tabs-stable">
+					<a class="tab-item" ng-click="addToDbVirtual(section);"><i class="icon ion-android-add-circle"></i> Add Bookmark</a>
+					<a class="tab-item" ng-href="#/gst/section_bookmark"><i class="icon ion-ios-star"></i> Bookmark</a>
+				</div>
+			</div>
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>
